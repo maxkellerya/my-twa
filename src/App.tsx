@@ -15,6 +15,7 @@ function App() {
   return (
     <>
       <TonConnectButton />
+      <a onClick={() => { showAlert(); }}>Show alert</a>
       <div className="Card">
         <b>Contract Address</b>
         <div>{contract_address}</div>
@@ -24,7 +25,6 @@ function App() {
         <div>{counter ?? "Loading..."}</div>
       </div>
       {connected && (<a className={`Button ${counter ? 'Active' : 'Disabled'}`} onClick={() => { sendIncrement(); }}>Increment</a>)}
-      <a onClick={() => { showAlert(); }}>Show alert</a>
     </>
   )
 }
