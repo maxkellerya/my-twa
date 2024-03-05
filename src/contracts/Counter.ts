@@ -2,7 +2,7 @@ import { Address, beginCell, Cell, Contract, contractAddress, ContractProvider, 
 
 export type CounterConfig = {};
 
-export function counterConfigToCell(config: CounterConfig): Cell {
+export function counterConfigToCell(_config: CounterConfig): Cell {
     return beginCell().storeUint(0, 64).endCell();
 }
 
