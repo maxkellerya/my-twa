@@ -16,11 +16,11 @@ function App() {
     <>
       <TonConnectButton />
       <a onClick={() => { showAlert(); }}>Show alert</a>
-      <div className="Card">
+      <div>
         <b>Contract Address</b>
         <div>{contract_address}</div>
       </div>
-      <div className="Card">
+      <div>
         <b>Counter</b>
         <div>{counter ?? "Loading..."}</div>
       </div>
