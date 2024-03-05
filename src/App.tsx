@@ -18,7 +18,7 @@ function App() {
       <a onClick={() => { showAlert(); }}>Show alert</a>
       <div>
         <b>Contract Address</b>
-        <div>{contract_address}</div>
+        <div>{contract_address?.slice(3, 15)}</div>
       </div>
       <div>
         <b>Counter</b>
