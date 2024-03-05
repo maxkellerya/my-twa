@@ -4,7 +4,7 @@ import { useCounterContract } from './hooks/useCounterContract'
 import { useTonConnect } from './hooks/useTonConnect';
 import WebApp from '@twa-dev/sdk'
 
-WebApp.showAlert('Hey there!');
+// WebApp.showAlert('Hey there!');
 function App() {
   const { connected } = useTonConnect();
   const { contract_address, counter, sendIncrement } = useCounterContract();
@@ -14,9 +14,8 @@ function App() {
 
   return (
     <>
-      <div><TonConnectButton /></div>
+      <TonConnectButton />
       <div className="Card">
-        <b>{WebApp.platform}</b>
         <b>Contract Address</b>
         <div>{contract_address}</div>
       </div>
